@@ -1,0 +1,8 @@
+{
+    "config.CustomCursors.name": "Custom Cursors",
+    "config.CustomCursors.description": "Change the cursors to be OURple.",
+    "config.FriendshipIndicator.name": "Friendship Indicator",
+    "config.FriendshipIndicator.description": "Change the friendship indicator in the portrait window.",
+    "config.ArtifactSpotToggle.name": "Artifact Spot Toggle",
+    "config.ArtifactSpotToggle.description": "Change the artifact spots.",
+}

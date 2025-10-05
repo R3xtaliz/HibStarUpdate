@@ -1,0 +1,68 @@
+{
+    "Name": "OURple UI",
+    "SupportedMods": [
+ 	   "VWC.OURple.UI"
+    ],
+    "SpriteTextColorSets": {
+        "*": {
+            "default": "#02224d"
+        }
+    },
+    "ColorVariables": {
+ 	   "Text": "#02224d",
+       "TextShadow": "#5a5297",
+       "TextShadowAlt": "#5a5297",
+       "ButtonHover": "#5a5297",
+       "BillboardHover": "#39497e",
+       "CalendarDim": "#f3c6f6",
+       "CalendarToday": "#a25eaa",
+       "FishingCastPowerRed": "#a25eaa",
+       "FishingCastPowerYellow": "#5a5297",
+       "FishingCastPowerGreen": "#02224d",
+       "FishingTreasureBar": "#74EBC6",
+       "FishingProgressRed": "#a25eaa",
+       "FishingProgressYellow": "#5a5297",
+       "FishingProgressGreen": "#02224d",
+       "FishingPerfectText": "#5a5297",
+       "MoneyDialSparkle": "#FFC6B0",
+       "MoneyDialText": "#1C054A",
+       "SpecialOrdersHover": "#39497e",
+       "CoopHover": "#39497e",
+       "CoopSmallTabSelected": "#5a5297",
+       "CoopSmallTabSelectedShadow": "#5a5297",
+       "CoopTabHover": "#5a5297",
+       "CoopTabSelected": "#A369EC",
+       "CoopTabSelectedShadow": "#5a5297",
+       "QuestBarIncomplete": "#5a5297",
+       "QuestBarIncompleteDark": "#5a5297",
+       "QuestBarComplete": "#a25eaa",
+       "QuestBarCompleteDark": "#a25eaa",
+       "HUDStaminaRed": "#A467BD",
+       "HUDStaminaYellow": "#F8708D",
+       "HUDStaminaGreen": "#74EBC6",
+       "HUDHealthRed": "#A467BD",
+       "HUDHealthYellow": "#F8708D",
+       "HUDHealthGreen": "#74EBC6",
+       "HUDHealthLow": "#FF0035",
+       "HUDHealthText": "#02224d",
+       "ElevatorCurrentFloorText": "#02224d",
+       "ElevatorFloorText": "#02224d",
+       "ExitPageHover": "#5a5297"
+    },
+
+    "Patches": [
+        "Billboard",
+        "BobberBar",
+        "MoneyDial",
+        "SpecialOrdersBoard",
+        "CoopMenu",
+        "QuestLog",
+        "DrawHud",
+        "MineElevatorMenu",
+        "ExitPage"
+        
+        
+    ]
+    
+
+}

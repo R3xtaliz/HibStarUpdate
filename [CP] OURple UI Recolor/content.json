@@ -1,0 +1,207 @@
+{
+    "Format": "2.7.0",
+    "ConfigSchema": {
+        "CustomCursors": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "FriendshipIndicator": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "ArtifactSpotToggle": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+	},
+	
+    "Changes": [
+        //Minigames
+        {
+            "LogName":"TitleButtons",
+            "Action": "EditImage",
+            "Target": "Minigames/TitleButtons",
+            "FromFile": "assets/{{Target}}_{{language}}.png"
+		},
+		{
+			"LogName":"Clouds",
+			"Action":"EditImage",
+			"Target":"Minigames/Clouds",
+			"FromFile":"assets/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 512, "Height": 539 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 539 },
+		},
+        //Cursors
+        {
+            "LogName": "Mouse Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/CustomAssets/{{TargetWithoutPath}}.png",
+            "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 32 },
+            "When" : {
+                "CustomCursors": "true"
+			}
+		},
+        {
+            "LogName": "Artifact Spots",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/CustomAssets/ArtifactSpot.png",
+            "ToArea": { "X": 368, "Y": 32, "Width": 64, "Height": 16 },
+            "When": {
+                "ArtifactSpotToggle": "true"
+			}
+		},
+        {
+            "LogName": "Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay"
+		},
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/{{Target}}_{{language}}.png",
+            "PatchMode": "Overlay"
+		},
+        //Loose Sprites
+        {
+            "LogName": "Replace LooseSprites",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Billboard, LooseSprites/buildingPlacementTiles, LooseSprites/BundleSprites, LooseSprites/chatBox, LooseSprites/ControllerMaps, LooseSprites/daybg, LooseSprites/dialogboxgreen, LooseSprites/dye_bench, LooseSprites/EmoteMenu, LooseSprites/font_bold, LooseSprites/font_colored, LooseSprites/ForgeMenu, LooseSprites/JunimoNote, LooseSprites/LanguageButtons, LooseSprites/letterBG, LooseSprites/mute_voice_icon, LooseSprites/nightbg, LooseSprites/PlayerStatusList, LooseSprites/PrizeTicketMenu, LooseSprites/SpecialOrdersBoard, LooseSprites/tailoring, LooseSprites/textBox",
+            "FromFile": "assets/{{Target}}.png"
+		},
+        {
+            "LogName": "Language Overlays",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Billboard, LooseSprites/ControllerMaps, LooseSprites/JunimoNote",
+            "FromFile": "assets/{{Target}}_{{language}}.png",
+            "PatchMode": "Overlay"
+		},
+        {
+            "LogName": "Overlays",
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis, LooseSprites/map, LooseSprites/Cursors2, LooseSprites/Cursors_1_6",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay"
+		},
+        {
+            "LogName": "Seasonal Map Overlays",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_fall, LooseSprites/map_summer, LooseSprites/map_winter, ",
+            "FromFile": "assets/LooseSprites/map.png",
+            "PatchMode": "Overlay"
+		},
+        //Maps
+        {
+            "Action": "EditImage",
+            "Target": "Maps/MenuTiles",
+            "FromFile": "assets/{{Target}}.png",
+            "PatchMode": "Overlay"
+		},
+        //TileSheets
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/emotes, TileSheets/BuffsIcons",
+            "FromFile": "assets/{{Target}}.png"
+		},
+		//TerrainFeatures
+        {
+            "Action": "EditImage",
+            "Target": "TerrainFeatures/BuffsIcons",
+            "FromFile": "assets/{{Target}}.png"
+        },
+		//Compat
+		 {
+            "LogName": "GMCM Compat",
+            "Action": "EditImage",
+            "Target": "Mods/GenericModConfigMenu/ConfigButton, Mods/GenericModConfigMenu/KeyboardButton",
+            "FromFile": "assets/CompatibilityPatches/GenericModConfigMenu/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "spacechase0.GenericModConfigMenu"
+            }
+        },
+		{
+            "LogName": "Font Settings Compat",
+            "Action": "EditImage",
+            "Target": "Mods/Becks723.FontSettings/delete, Mods/Becks723.FontSettings/export, Mods/Becks723.FontSettings/font-button, Mods/Becks723.FontSettings/font-preview-compare, Mods/Becks723.FontSettings/font-preview-normal, Mods/Becks723.FontSettings/font-tab, Mods/Becks723.FontSettings/icon-for-toolbar-icons, Mods/Becks723.FontSettings/refresh, Mods/Becks723.FontSettings/save",
+            "FromFile": "assets/CompatibilityPatches/FontSettings/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "Becks723.FontSettings"
+            }
+        },
+		{
+            "LogName": "Happy Home Designer Compat",
+            "Action": "EditImage",
+            "Target": "Mods/tlitookilakin.HappyHomeDesigner/UI",
+            "FromFile": "assets/CompatibilityPatches/HappyHomeDesigner/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "tlitookilakin.HappyHomeDesigner"
+            }
+        },
+		{
+            "LogName": "Unlockable Bundles Compat",
+            "Action": "EditImage",
+            "Target": "UnlockableBundles/UI/AlternativeJunimoNote, UnlockableBundles/UI/BundleBook, UnlockableBundles/UI/BundleDiscoveredAnimation, UnlockableBundles/UI/BundleOverviewBG, UnlockableBundles/UI/BundleOverviewIcon, UnlockableBundles/UI/MagicBookJunimoNote, UnlockableBundles/UI/MagicBookJunimoNote_Brown, UnlockableBundles/UI/MagicBookJunimoNote_Green, UnlockableBundles/UI/MagicBookJunimoNote_Red, UnlockableBundles/UI/MagicBookJunimoNote_Teal, UnlockableBundles/UI/MagicBookJunimoNote_Yellow, UnlockableBundles/UI/CookbookJunimoNote, UnlockableBundles/UI/RaccoonJunimoNote",
+            "FromFile": "assets/CompatibilityPatches/UnlockableBundles/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "DLX.Bundles"
+            }
+        },
+		{
+            "LogName": "Love of Cooking Compat",
+            "Action": "EditImage",
+            "Target": "Mods/blueberry.LoveOfCooking.Assets/Sprites, Mods/blueberry.LoveOfCooking.Assets/CookbookSprites",
+            "FromFile": "assets/CompatibilityPatches/LoveOfCooking/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "blueberry.LoveOfCooking"
+            }
+        },
+	{
+            "LogName": "Swim Continued Compat",
+            "Action": "EditImage",
+            "Target": "FlyingTNT.Swim/OxygenBar",
+            "FromFile": "assets/CompatibilityPatches/Swim/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "FlyingTNT.Swim"
+            }
+        },
+		{
+            "LogName": "Smart Building Compat",
+            "Action": "EditImage",
+            "Target": "Mods/SmartBuilding/ToolButtons",
+            "FromFile": "assets/CompatibilityPatches/SmartBuilding/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "DecidedlyHuman.SmartBuilding"
+            }
+        },
+		{
+            "LogName": "Event Lookup Compat",
+            "Action": "EditImage",
+            "Target": "Mods/shekurika.EventLookup/button, Mods/shekurika.EventLookup/statusCover",
+            "FromFile": "assets/CompatibilityPatches/EventLookup/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "shekurika.EventLookup"
+            }
+        },
+		{
+            "LogName": "Bigger Backpack Compat",
+            "Action": "EditImage",
+            "Target": "BiggerBackPack/JunimoNote",
+            "FromFile": "assets/CompatibilityPatches/BiggerBackpack/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "spacechase0.BiggerBackpack"
+            }
+        },
+		{
+            "LogName": "Vanilla Plus Professions Compat",
+            "Action": "EditImage",
+            "Target": "VanillaPlusProfessions/TalentBG, VanillaPlusProfessions/TalentSchema, VanillaPlusProfessions/SkillBars, VanillaPlusProfessions/ProfessionIcons, VanillaPlusProfessions/BundleIcons",
+            "FromFile": "assets/CompatibilityPatches/VanillaPlusProfessions/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod": "KediDili.VanillaPlusProfessions"
+            }
+        },
+	]
+}

@@ -1,0 +1,13 @@
+{
+    "Name": "OURple UI Recolor",
+    "Author": "VoiDWitchCult",
+    "Version": "1.0.0",
+    "Description": "A mod that gives the UI an OURple theme!",
+    "UniqueID": "VWC.OURple.UI",
+	"stardew:theme": "theme.json",
+    "UpdateKeys": [ "Nexus:24778" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "leclair.bettercrafting:theme": "assets/CompatibilityPatches/BetterCrafting/theme.json" 
+}

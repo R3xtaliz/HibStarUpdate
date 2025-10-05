@@ -1,0 +1,24 @@
+{
+	"Name": "OURple UI",
+	"For": [
+		"VWC.OURple.UI"
+	],
+    
+	"CustomMouse": true,
+	"CustomScroll": true,
+	"CustomTooltip": true,
+
+	"TextColor": "#02224d",
+	"TextShadowColor": "#5a5297",
+
+	"TooltipTextColor": "#02224d",
+	"TooltipTextShadowColor": "#5a5297",
+
+	"SearchHighlightColor": "purple",
+
+	"QuantityCriticalTextColor": "red",
+	"QuantityCriticalShadowColor": null,
+
+	"QuantityWarningTextColor": "orangered",
+	"QuantityWarningShadowColor": null
+}
